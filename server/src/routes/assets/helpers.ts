@@ -82,7 +82,6 @@ export const getAssets = (clientId?: string) => {
     ? `SELECT * FROM assets WHERE client_id = '${clientId}'`
     : "SELECT * FROM assets";
 
-  console.log({ clientId, statement });
   return (db: PoolConnection): Asset[] =>
     db.prepare(statement).all() as Asset[];
 };
@@ -100,7 +99,6 @@ export const getJSONArray = (file: Buffer) => {
       throw new Error();
     }
   } catch (e) {
-    console.log(e);
     throw new Error("invalid json");
   }
 };

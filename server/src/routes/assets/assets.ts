@@ -18,9 +18,6 @@ const upload = multer({ storage, limits: { fileSize: fileLimit } });
 
 assets.get("/", async (request, response) => {
   try {
-    // filter by client id
-    console.log(request.headers);
-    console.log(request.headers);
     const clientId = request.query["Client-Id"] as string;
     response.appendHeader("Content-Type", "application/json");
     const resp = await query(getAssets(clientId));

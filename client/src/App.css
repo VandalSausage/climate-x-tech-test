@@ -1,0 +1,79 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.form-items {
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 3em;
+}
+
+.page-link {
+  width: 10em;
+  border: 0.1em solid #4e4e4e;
+  border-radius: 1em;
+  text-align: center;
+  line-height: 2em;
+  height: 2em;
+}
+.asset-table {
+  margin: 0 auto;
+}
+
+.table-cell {
+  text-align: center;
+}
+
+.error {
+  color: red;
+}
+
+.search-area {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.search-button {
+  width: 10em;
+}
+
+.search-input {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.layout {
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.submit-input {
+  margin-top: 2em;
+  width: 10em;
+}
+
+.file-input {
+  margin-top: 2em;
+  width: 14em;
+}
